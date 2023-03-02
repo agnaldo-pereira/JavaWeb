@@ -18,9 +18,16 @@ public class LoginController extends HttpServlet {
     public LoginController() {
         super();
     }
-
+    
+    // Entender diferença entre RequestDispatcher x response.sendRedirect
+    // Fazer a área logada
+    // Fazer logout
+    
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+		//response.getWriter().append("Served at: ").append(request.getContextPath());
+		String url = "login.jsp";
+		RequestDispatcher view = request.getRequestDispatcher(url);
+		view.forward(request, response);
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

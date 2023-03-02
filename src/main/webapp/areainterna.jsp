@@ -7,6 +7,14 @@
 <title>Insert title here</title>
 </head>
 <body>
+	<!-- Configurar bootstrap
+		Usar navbar do bootstrap -->
 	<p>teste </p>
+	
+	<%
+		String usuario = (String)session.getAttribute("usuario");
+	%>
+	
+	<%=usuario.toString()%>
 </body>
 </html>
