@@ -3,18 +3,16 @@ package controller;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import model.Pessoa;
 
-@WebServlet("/PessoaController")
+//@WebServlet("/PessoaController")
 public class PessoaController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        

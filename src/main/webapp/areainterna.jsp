@@ -84,7 +84,7 @@
     <link href="offcanvas-navbar.css" rel="stylesheet">
   </head>
   
-  <%String usuario = (String)session.getAttribute("usuario");%>
+  <%String usuario = (String)session.getAttribute("nome");%>
   <%Date data = new Date(); %>
   
   <body class="bg-light">

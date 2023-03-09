@@ -8,7 +8,7 @@
     <title>Bootstrap demo</title>
 </head>
 <body>
-	<p>qualquer coisa</p>
 	<h1>Hello, world!</h1>
+	<h2><a href="login.jsp">Login</a></h2>
 </body>
 </html>

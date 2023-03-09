@@ -69,11 +69,15 @@
 <body class="text-center">
     
     <main class="form-signin w-100 m-auto">
-      <form method="post" action="login">
+      <form method="post" action="novousuario">
       
         <img class="mb-4" src="img/login.png" alt="" width="110" height="90">
-        <h1 class="h3 mb-3 fw-normal">Login</h1>
+        <h1 class="h3 mb-3 fw-normal">Criar sua conta</h1>
 
+        <div class="form-floating">
+          <input type="text" class="form-control" id="floatingInput" placeholder="nome" name="nome">
+          <label for="floatingInput">Nome</label>
+        </div>
         <div class="form-floating">
           <input type="email" class="form-control" id="floatingInput" placeholder="nome@exemplo.com" name="email">
           <label for="floatingInput">Email</label>
@@ -83,17 +87,10 @@
           <label for="floatingPassword">Senha</label>
         </div>
 
-        <div class="checkbox mb-3">
-          <label>
-            <input type="checkbox" value="lembrar-me" name="lembrar"> Lembrar-me
-          </label>
-        </div>
-        <button class="w-100 btn btn-lg btn-primary" type="submit">Entrar</button>
-        <!-- <p class="mt-5 mb-3 text-muted">&copy; 2023</p> -->
+        <button class="w-100 btn btn-lg btn-primary" type="submit">Registrar</button>
+        
         <br><br>
       </form>
-      
-      <a href="novousuario.jsp" >Não tem uma conta? Inscreva-se</a>
       
       <% 
       	ArrayList<String> erros = (ArrayList)request.getAttribute("erros");
